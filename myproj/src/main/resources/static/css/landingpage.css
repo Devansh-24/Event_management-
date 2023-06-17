@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+
+.container-fluid {
+  background-color: black;
+}
+.navbar-expand-lg {
+  width: 100%;
+  position:fixed;
+  background-color: black;
+}
+/* LOGO */
+img{
+  height:100px;
+}
+/* NAV BAR */
+.nav-link
+{
+  margin: 10px 15px ;
+}
+.nav-link:hover{
+  font-family: cursive;
+  border-radius: 7px;
+  background-color: rgb(238, 106, 165);
+  color:black;
+}
+/*login button*/
+.btn-outline-danger {
+  height: 43px;
+  /* padding: 0px 25px;
+  margin: 2px 88px; */
+  padding: 0px 25px;
+  margin: 14px -49px;
+  background-color: rgb(141, 139, 139);
+  color: white;
+  font-weight: 800;
+  border-color: cornsilk;
+
+}
+/* FULL BUTTON */
+.btn {
+      padding: 8px 24px;
+      /* margin: inherit; */
+      margin: 8px 56px;
+}
+button.btn.btn-outline-danger:hover
+{
+    background-color: rgb(238, 106, 165);
+     
+}
+button.btn.btn-outline-danger {
+  color: #0a0a0a;
+  font-size: 20px;
+  margin: 4px;
+  border-color: #ebb0e9;
+  background-color: white;
+}
+  /* INSIDE LOGIN AND ABOVE TEXT */
+/* .vend {
+  padding: 0px 126px;
+  margin: 0px 88px;
+} */
+
+
+
+.vend {
+
+    padding: 13px 10px;
+  margin: -3px 8px;
+}
+.read
+{
+  color: rgb(205, 118, 210);
+  font-size:20px;
+  display: flex;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* page 2 under dashboard css */
+.home-child {
+  position: absolute;
+  top: 1146px;
+  left: 47px;
+  width: 1380px;
+  height: 1500px;
+}
+.we-specialize-in {
+  margin: 0;
+}
+.wsi-container1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.what_clients{
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  font-family: var(--font-jost);
+  color: var(--color-gray-200);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 244px;
+  height: 48px;
+}
+
+.fruit-icon {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 597px;
+  height: 635px;
+  object-fit: cover;
+}
+.personal-touches,
+.you-dont-only-container {
+  position: absolute;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+.personal-touches {
+  top: 83px;
+  left: 655.36px;
+  justify-content: center;
+  width: 428.93px;
+  height: 146px;
+}
+.you-dont-only-container {
+  top: 212px;
+  left: 668.43px;
+  font-size: var(--font-size-8xl);
+  font-family: var(--font-inria-serif);
+  color: #e6d5e9;
+  text-align: left;
+  width: 510.57px;
+  height: 287px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* our services button and its items */
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(83% + 128.5px);
+  left: calc(50% + 208.48px);
+  box-shadow: 9px 16px 15px #ce9ecdfa;
+  width: 215px;
+  height: 20px;
+  top: 568px;
+}
+.button-item {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #ed80fd;
+  position: absolute;
+  top: calc(87% - 26px);
+  left: calc(77% - 103.23px);
+  border-radius: var(--br-xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 214.46px;
+  height: 62px;
+}
+
+/* next the what clients say butoon AND content */
+.wedding-icon {
+  position: absolute;
+  top: 157px;
+  left: 611.41px;
+  width: 567.59px;
+  height: 635px;
+  object-fit: cover;
+}
+.flawless-execution,
+.wsi-container {
+  position: absolute;
+  top: 275px;
+  left: 0;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  width: 559px;
+  height: 302px;
+}
+.flawless-execution {
+  top: 133px;
+  left: 59px;
+  font-size: var(--font-size-57xl);
+  font-family: var(--font-imperial-script);
+  color: #c2a0ec;
+  text-align: center;
+  justify-content: center;
+  width: 517px;
+  height: 146px;
+}
+/* what ppl button */
+
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(80% + 130.5px);
+  left: calc(50% - 465.5px);
+  box-shadow: 15px 15px 15px #c297c2;
+  width: 269.8px;
+  height: 74.14px;
+}
+
+/* page one the easyly plan your wedding part */
+
+.plan-your-wedding-child {
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-thistle-100);
+  box-shadow: 0 10px 40px rgba(238, 154, 229, 0.2);
+  width: 397px;
+}
+.easily-plan-your,
+.get-started {
+  position: absolute;
+  letter-spacing: -0.02em;
+}
+.easily-plan-your {
+  top: 26px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  width: 366px;
+  height: 87px;
+}
+.get-started {
+  top: 113px;
+  left: 104px;
+  font-size: var(--font-size-6xl);
+  color: #f4e4ef;
+}
+.body,
+.plan-your-wedding {
+  position: absolute;
+  height: 179px;
+}
+.plan-your-wedding {
+  top: 0;
+  left: 0;
+  box-shadow: 0 10px 50px rgba(183, 77, 199, 0.1);
+  width: 397px;
+  font-size: var(--font-size-11xl);
+}
+.button-child {
+  position: absolute;
+  top: calc(37% - 30px);
+  left: calc(42% - 130px);
+  border-radius: var(--br-xl);
+  width: 299px;
+  height: 92px;
+}
+
+.body-3 {
+  position: absolute;
+  top: calc(50% + 341px);
+  left: calc(50% - 596px);
+  width: 1179px;
+  height: 635px;
+  font-family: var(--font-inria-serif);
+}
+
+.our-services {
+  position: absolute;
+  top: 10px;
+  left: 24.13px;
+  font-size: var(--font-size-6xl);
+  font-weight: 500;
+  font-family: var(--font-jost);
+  color: var(--color-gray-200);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165.52px;
+  height: 55.61px;
+  -webkit-text-stroke: 1px #000;
+}
+
+.body2,
+.button1,
+.button2 {
+  position: absolute;
+}
+.button2 {
+  border: 0;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: var(--font-jost);
+  font-size: var(--font-size-6xl);
+  top: calc(50% + 128.5px);
+  left: calc(50% + 208.48px);
+  box-shadow: 15px 15px 11px rgba(199, 146, 188, 0.68);
+  width: 214.46px;
+  height: 62px;
+  cursor: pointer;
+}
+.body2 {
+  top: 1189px;
+  left: 112px;
+  width: 1179px;
+  height: 635px;
+  text-align: center;
+  font-size: var(--font-size-57xl);
+  color: #d2aff5;
+  font-family: var(--font-imperial-script);
+}
+.decoration-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-thistle-100);
+  box-shadow: 0 10px 50px rgba(238, 154, 229, 0.2);
+  width: 209px;
+  height: 179px;
+}
+.decoration1 {
+  position: absolute;
+  top: 131px;
+  left: 38px;
+  letter-spacing: -0.02em;
+}
+.pngwing-4-icon {
+  position: absolute;
+  top: 14px;
+  left: 34px;
+  width: 141px;
+  height: 103px;
+  object-fit: cover;
+}
+.caterian-child,
+.decoration {
+  position: absolute;
+  top: 0;
+  width: 209px;
+  height: 179px;
+}
+.decoration {
+  left: 1003px;
+  box-shadow: 0 10px 50px rgba(135, 0, 155, 0.1);
+  cursor: pointer;
+}
+.caterian-child {
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-thistle-100);
+  box-shadow: 0 10px 50px rgba(238, 154, 229, 0.15);
+}
+.pngwing-3-icon {
+  position: absolute;
+  top: 19px;
+  left: 41px;
+  width: 126px;
+  height: 103px;
+  object-fit: cover;
+}
+.caterian1 {
+  position: absolute;
+  top: 131px;
+  left: 53px;
+  letter-spacing: -0.02em;
+}
+.caterian {
+  position: absolute;
+  top: 0;
+  left: 742px;
+  box-shadow: 0 10px 50px rgba(135, 0, 155, 0.1);
+  width: 209px;
+  height: 179px;
+  cursor: pointer;
+}
+.pngwing-5-icon {
+  position: absolute;
+  top: 17px;
+  left: 40px;
+  width: 124px;
+  height: 108px;
+  object-fit: cover;
+}
+.venue1 {
+  position: absolute;
+  top: 131px;
+  left: 64px;
+  letter-spacing: -0.02em;
+}
+.venue {
+  top: 0;
+  left: 460px;
+  box-shadow: 0 10px 50px rgba(135, 0, 155, 0.1);
+  width: 209px;
+  cursor: pointer;
+}
+.body,
+.plan-your-wedding,
+.venue {
+  position: absolute;
+  height: 179px;
+}
+
+
+.plan-your-wedding {
+    border: 0;
+    background-color: #d881bd;
+    display: block;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-11xl);
+    top: 3px;
+    left: 15px;
+    box-shadow: 0 15px 50px rgb(177 28 200 / 10%);
+    width: 396px;
+    border-radius: 14px;
+}
+.body {
+  top: 875px;
+  left: 100px;
+  box-shadow: 15px 15px 20px #a36ca4;
+  width: 1212px;
+  font-size: var(--font-size-6xl);
+  color: var(--color-gray-100);
+}
+.text-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-29xl) var(--br-29xl) 300px var(--br-29xl);
+  background: linear-gradient(-45.59deg, #ee9ae5, #5961f9);
+  width: 1240px;
+  height: 624px;
+}
+.pngwing-1-icon {
+  position: absolute;
+  top: 38.13px;
+  left: 731.35px;
+  width: 384.01px;
+  height: 517.4px;
+  object-fit: cover;
+}
+.button-inner,
+.button3 {
+  background-color: transparent;
+  position: absolute;
+}
+.button3 {
+  border: 0;
+  font-weight: 600;
+  font-family: var(--font-jost);
+  font-size: var(--font-size-lg);
+  top: calc(56% + 118px);
+    left: calc(51% - 559px);
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.25);
+    width: 158px;
+    height: 60px;
+}
+.button-inner {
+  cursor: pointer;
+  border: 1px solid rgba(1, 1, 1, 0.5);
+  padding: 0px;
+  top: calc(74% - 35.37px);
+  left: calc(24% - 54px);
+  border-radius: 20px;
+  box-shadow: 0 16px 6px rgba(0, 0, 0, -50.75);
+  box-sizing: border-box;
+  width: 139px;
+  height: 53px;
+}
+
+.discount {
+    position: absolute;
+    top: 4px;
+    left: 21px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-jost);
+    color: var(--color-black);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 131px;
+    height: 60px;
+}
+.button4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+     top: calc(57% + 116px);
+    left: calc(52% - 380px);
+    box-shadow: 15px 15px 8px rgb(74 66 66 / 99%);
+    width: 158px;
+    height: 54px;
+}
+.discover-everything-you,
+.som {
+  position: absolute;
+  top: 326.73px;
+  left: 64.15px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  width: 551.72px;
+  height: 135.2px;
+  color: black;
+}
+.discover-everything-you {
+  top: 14.73px;
+  left: 58.65px;
+  font-size: 60px;
+  width: 581.05px;
+  height: 339.73px;
+  color: black;
+}
+.header,
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 624px;
+}
+.header {
+  top: 134px;
+  left: 100px;
+  font-size: var(--font-size-11xl);
+  color: var(--color-gray-200);
+}
+
+.home {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+ 
+  height: 2700px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-8xl);
+  color: #ffeaea;
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .navigation {
+    opacity: 1;
+  }
+  .navigation.animate {
+    animation: 1s ease 0s 1 normal forwards scale-up;
+  }
+  @keyframes scale-up {
+    0% {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .home:hover {
+    display: flex;
+  }
+}
+
+
+div.abcd {
+  
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.abcd a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.abcd a:hover {
+  background-color: #777;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/UserRegistration.css}">
+
+    <title>User's Sign Up</title>
+</head>
+<body>
+  
+    <img src="images/E3.jpg" id="centre" style="width: 78%;height: 745px;margin-right: -916px;">
+    <div class="wrapper">
+         <div class="form-wrapper sign-in">
+             <form th:action="@{/register}" method="post" onsubmit="validateForm()">
+                <h2> User's Sign Up</h2>
+
+                <th:block th:if="${session.msg}">
+                    <p class="text-center fs-4 text-light">[[${session.msg}]]</p>
+                    <th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+                </th:block>
+
+                <div class="input-group">
+                    <input type="text" id="custName" name="custName" pattern="\S(.*\S)?" title="Blank spaces not allowed" minlength="2" required >
+                    
+                    <label for="">First Name and Last Name </label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="custEmail" name="custEmail"  required  minlength="5"
+                    maxlength="20" >
+                    <label for="">Email </label>
+                </div>
+                 <div class="input-group">
+                     <input type="password" id="custPass" name="custPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required  minlength="6"
+                     maxlength="20" > <label for="">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="custConfirmPass" name="custConfirmPass" required  minlength="6"
+                    maxlength="20" > <label for="">Confirm Password </label>
+               </div>
+               <div class="input-group">
+                <input type="number" id="custMob" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" name="custMob" required minlength="10" >
+                <label for="">Phone No </label>
+            </div>
+
+                <div class="remember">
+                    <label > <h5>By clicking'signup' I accept the Term of Use of EMS</h5></label>
+                </div>
+                <a th:href="@{/customer/register-customer}"></a><button type="submit" value="Sign up"></button>
+               
+
+                
+                
+                <div class="signup-link">
+                    <p>Already have an account <a th:href="@{http://localhost:5557/UserLogin}"
+                    class="signupbtn-ilink">sign In</a></p>
+                </div>
+            </form>
+        
+        </div>
+        
+     </div>
+     
+     <script th:inline="javascript">
+        function validateForm(event) {
+            var custName = document.getElementById("custName").value.trim();
+            // Repeat for other input fields
+            
+            if (custName === '' /* && other conditions */) {
+                
+                alert('Please enter a valid value for all fields.');
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+
+</html>

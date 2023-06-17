@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.table{
+    color: rgb(250, 251, 252);
+    background-color: rgb(21, 17, 20);
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #a4bbdf;
+    border-color: #dee2e6;
+}
+.iconimage{
+    height: 25px;
+}
+.container{
+    margin-top: 10px;
+}

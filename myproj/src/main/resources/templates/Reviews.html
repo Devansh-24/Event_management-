@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>reviews</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
+<link rel="stylesheet" href="/css/Reviews.css">
+<link rel="stylesheet" href="./css/navigation.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="./css/footer.css"> -->
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="./css/footer.css"> 
+
+</head>
+<body>
+<style>
+    body {
+    font-family: tahoma;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  html body {
+    background-color: rgba(0,0,0,1.00);
+  
+  }
+  
+  .testimonial {
+    background-color: white;
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 100px 15px 160px;
+    position: relative;
+  }
+  
+  .testimonial::before,
+  .testimonial::after {
+    content: "";
+    border-top: 40px solid white;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+  }
+  
+  .testimonial::after {
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+  }
+  
+  .testimonial .icon {
+    display: inline-block;
+    font-size: 80px;
+    color: #a70671;
+    margin-bottom: 20px;
+    opacity: 0.6;
+  }
+  
+  .testimonial .description {
+    font-size: 14px;
+    color: #777;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .testimonial .testimonial-content {
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+  
+  .testimonial .pic {
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px #b30b7b;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .testimonial .pic img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .testimonial .name {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    margin: 10px 0 5px 0;
+  }
+  
+  .testimonial .title {
+    display: block;
+    font-size: 14px;
+    color: #ee86c1;
+  }
+  
+  .owl-controls {
+    margin-top: 20px;
+  }
+  
+  .owl-pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .owl-page {
+    height: 10px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10%;
+  }
+  
+  .owl-page:hover,
+  .owl-page.active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .owl-page:not(first-item) {
+    margin-left: 10px;
+  }
+  
+  
+</style>
+ <!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./public/logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" th:href="@{/}" href="landingpage.htm  l"><h4>Home</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  th:href="@{/venues}" href="venues.html"><h4>Venues</h4></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" th:href="@{/services}" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <h4>Services</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><h4>Catreen</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Decors</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Mehendi</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Anchors</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Choreographer</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Photographers</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Gallery}" href="Gallery.html"><h4>Gallary</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Reviews}" href="Reviews.html"><h4>Reviews</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  th:href="@{/packages}" href="packages.html"><h4>Packages</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Aboutus}" href="Aboutus.html"><h4>About </h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  th:href="@{/contact}"><h4>Contact </h4></a>
+              </li>
+              <div class="vend">
+               <a th:href="@{/vendorlogin}" href="VendorLogin.html"> <h1 class="read">Are you  Vendor ?</h1></a>
+                <a th:href="@{/Userlogin}" href="UserLogin.html"><button type="button" class="btn btn-outline-danger">Signup/Signin</button></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- </nav> end-->
+
+
+
+
+<!-- partial:index.partial.html -->
+<!-- <div class="demo">
+  <div class="container">
+    <div class="row">
+      <div id="testimonial-slider" class="owl-carousel">
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span> -->
+          <!-- <p class="description">
+            The event planned by MangalEvents was absolutely excellent. The team did a fantastic job and everything went as planned. Thank you so much for making my event great.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://picsum.photos/130/130?image=1027" alt="">
+            </div>
+            <h3 class="name">Sonu Nigam</h3>
+            <span class="title">Project Manager</span>
+          </div>
+        </div> -->
+        <center><h5>REVIEWS</h5></center>
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Thank your MangalEvents for making my daughters first birthday a success. The event was beautifully planned with the photography, the host and everything else. We didn't have to worry about anything. The team did an excellent job, we're definitely booking you'll again for our next event, Thank you.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://picsum.photos/130/130?image=839" alt="">
+            </div>
+            <h3 class="name">Vrushali Gaikwad</h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Thank you MangalEvents for the wonderful experience and congratulations on the success of yet another event. We look forward to working with you’ll again.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://picsum.photos/130/130?image=856" alt="">
+            </div>
+            <h3 class="name">Vivek Ghule</h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            It was a rocking event. The event team was very supportive, patient and always available. We were impressed by the Design Team’s execution and understanding of the concept, as well as the effort they put in to make it all come to life.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://picsum.photos/130/130?image=836" alt="">
+            </div>
+            <h3 class="name">Chetana Dusane</h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            This is the second time we are organizing our INTECH program with MangalEvents. Since the first time, we have been amazed by the level of dedication and hard work which has been put into organizing our event by their team. I am really grateful for the fact that they sometimes even worked at odd hours for us! And, I would love to work with them in the future.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://picsum.photos/130/130?image=883" alt="">
+            </div>
+            <h3 class="name">Gaurav Bagal</h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+                <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            I found the Galaxy Banquet venue through MangalEvents for my wedding. They have arranged everything very well, right from the decorations, to the hall and catering. I would suggest everyone to choose MangalEvents to plan their Big Day!
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://picsum.photos/130/130?image=777" alt="">
+            </div>
+            <h3 class="name">Shruti Shinde</h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer class="bg-dark text-white pt-5 pb-4 footer " id="contact">
+      
+  <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABOUT OUR EVENTS</h5>
+          <p>Your One Stop Solution For Making Any Event Memorable Or A Success. Making Dreams come true</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text uppercase mb- font-weight-bold text-warning">Event Planning</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Event Management</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Meeting & Event Blog</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Why choose us?</a></p>
+          
+
+      </div>
+      <div class="col-md-3 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Terms Of Use</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
+         <p> <a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+          <p> <i class="fas fa-home mr-3"></i>Mangalevent@gmail.com</p>
+          <p> <i class="fas fa-envelope mr-3"></i>+91 1234567890</p>
+      </div>
+      <hr class="mb-4">
+      <div class="col-mb-7 col-lg-8">
+          <p>Copyright @2023 All rights reserved by:MangalEvents
+              <a href="#" style="text-decoration: none;"><strong class="text-warning">MangalEvents</strong></a>
+          </p>
+      </div>
+      
+  </div>
+</div>
+
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

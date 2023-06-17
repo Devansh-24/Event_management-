@@ -1,0 +1,20 @@
+.mnp{
+    width: 40%;
+    float: left;
+    height: 480px;
+    background-color: black;
+}
+
+.pqr{
+    width: 60%;
+    float:right;
+    height: 480px;
+    background-image: url("/image/cserviceedited.jpg");
+    max-width: 100%;
+    max-height: 100%;   
+}
+
+.card{
+    margin: 100px;
+    background-color: #cbccc7;
+}

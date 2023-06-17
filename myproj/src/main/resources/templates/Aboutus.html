@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/aboutus.css}">
+  <link rel="stylesheet" th:href="@{/css/navigation.css}">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
+<!--Footer link-->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="./css/footer.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="/css/navigation.css"> -->
+  <title>Document</title>
+</head>
+<body>
+    <!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./public/logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" th:href="@{/}" href="landingpage.htm  l"><h4>Home</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  th:href="@{/venues}" href="venues.html"><h4>Venues</h4></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" th:href="@{/services}" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <h4>Services</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><h4>Catreen</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Decors</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Mehendi</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Anchors</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Choreographer</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Photographers</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Gallery}" href="Gallery.html"><h4>Gallary</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Reviews}" href="Reviews.html"><h4>Reviews</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  th:href="@{/packages}" href="packages.html"><h4>Packages</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Aboutus}" href="Aboutus.html"><h4>About </h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  th:href="@{/contact}"><h4>Contact </h4></a>
+              </li>
+              <div class="vend">
+               <a th:href="@{/vendorlogin}" href="VendorLogin.html"> <h1 class="read">Are you  Vendor ?</h1></a>
+                <a th:href="@{/Userlogin}" href="UserLogin.html"><button type="button" class="btn btn-outline-danger">Signup/Signin</button></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- </nav> end-->
+<!-- About us part -->
+<div class="about-section">
+  <h1>About Mangal Events</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="public/cate-1@2x.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="public/event-4@2x.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="public/cate-1@2x.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of About us -->
+
+
+
+<footer class="bg-dark text-white pt-5 pb-4 footer " id="contact">
+  
+      <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABOUT OUR EVENTS</h5>
+              <p>Your One Stop Solution For Making Any Event Memorable Or A Success. Making Dreams come true</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text uppercase mb- font-weight-bold text-warning">Event Planning</h5>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Event Management</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Meeting & Event Blog</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Why choose us?</a></p>
+              
+   
+          </div>
+          <div class="col-md-3 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Terms Of Use</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
+             <p> <a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+              <p> <i class="fas fa-home mr-3"></i>Mangalevent@gmail.com</p>
+              <p> <i class="fas fa-envelope mr-3"></i>+91 1234567890</p>
+          </div>
+          <hr class="mb-4">
+          <div class="col-mb-7 col-lg-8">
+              <p>Copyright @2023 All rights reserved by:MangalEvents
+                  <a href="#" style="text-decoration: none;"><strong class="text-warning">MangalEvents</strong></a>
+              </p>
+          </div>
+          
+      </div>
+  </div>
+
+</footer>
+</body>
+</html>

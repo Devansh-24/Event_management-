@@ -1,0 +1,201 @@
+/* ------------------------------------------------------------------------HEADER----------------------------------------------------- */
+.container-fluid {
+    background-color: black;
+  }
+  .navbar-expand-lg {
+    width: 100%;
+    /* position:fixed; */
+    background-color: black;
+  }
+  /* LOGO */  
+  img{
+    height:100px;
+  }
+  /* NAV BAR */
+  .nav-link
+  {
+    margin: 10px 15px ;
+  }
+  .nav-link:hover{
+    font-family: cursive;
+    border-radius: 7px;
+    background-color: rgb(238, 106, 165);
+    color:black;
+  }
+  /* /login button/ */
+  .btn-outline-danger {
+    height: 43px;
+    /* padding: 0px 25px;
+    margin: 2px 88px; */
+    padding: 0px 25px;
+    margin: 14px -49px;
+    background-color: rgb(141, 139, 139);
+    color: white;
+    font-weight: 800;
+    border-color: cornsilk;
+  
+  }
+  /* FULL BUTTON */
+  .btn {
+        padding: 8px 24px;
+        /* margin: inherit; */
+        margin: 8px 56px;
+  }
+  button.btn.btn-outline-danger:hover
+  {
+      background-color: rgb(238, 106, 165);
+       
+  }
+  button.btn.btn-outline-danger {
+    color: #0a0a0a;
+    font-size: 20px;
+    margin: 4px;
+    border-color: #ebb0e9;
+    background-color: white;
+  }
+    /* INSIDE LOGIN AND ABOVE TEXT */
+  /* .vend {
+    padding: 0px 126px;
+    margin: 0px 88px;
+  } */
+  .vend {
+    padding: 13px 100px;
+    margin: -3px 88px;
+  }
+  .read
+  {
+    color: rgb(205, 118, 210);
+    font-size:20px;
+    display: flex;
+    
+  }
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+body{
+    margin:0;
+    padding:0;
+    background:black;
+    font-family:cursive;
+  }
+  .card{
+    width: 251px;
+    height: 275px;
+    /* position:absolute; */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)perspective(2000px);
+    background:#fff;
+    transform-style:preserve-3d;
+    box-shadow:inset 300px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
+    transition:1s;
+    margin-top: 117px;
+    margin-left: 212px;
+  }
+  
+  .card:hover{
+    transform:translate(-50%,-50%) perspective(2000px) rotate(-10deg);  
+     box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 10px 100px rgba(0,0,0,.5);
+  }
+ 
+  .card:before{
+    content:'';
+    /* position:absolute; */
+    top:-5px;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#2196F3;
+    transform-origin:bottom;
+    transform:skewX(-45deg)
+  }
+  button.btn3 {
+    background-color: #eba5e6;
+}
+
+  .card:after{
+    content:'';
+    /* position:absolute; */
+    top:0;
+    right:-5px;
+    width:5px;
+    height:100%;
+    background:#2196F3;
+    transform-origin:left;
+    transform:skewY(-45deg);
+  }
+
+  .card .imgBox img{
+    height: 277px;
+    width: 250px;
+  }
+  
+  .card .imgBox{
+    width:100%;
+    height:100%;
+    position:relative;
+    transform-origin:left;
+    transition:1s cubic-bezier(.15,1.7,.84,.58);
+  }
+  
+  .card:hover .imgBox{
+    transform:rotateY(-125deg)
+  }
+
+  .card .details{
+    position:absolute;
+    top:0;left:0;
+    box-sizing:boreder-box;
+    padding:20px;
+      z-index:-1;
+  }
+  
+  .bigbox1
+  {
+    display: flex;
+    padding: 260px;
+    /* position:fixed; */
+    margin-left: -1285px;
+    margin-top: -214px;
+  }
+
+  .bigbox2
+  {
+    display: flex;
+    padding: 260px;
+    /* position:fixed; */
+    margin-left: -1285px;
+    margin-top: -403px;
+  }
+
+  .btn3{
+    display: inline-block;
+    padding: 3px 3.8rem;
+    background-color: #7DB46CFF;
+    border-radius: 4rem;
+    box-shadow: rgb(6 6 6) 0px 0px 1rem;
+    font-size: 0.7rem;
+    color: var(--second-bg-color);
+    margin-left: 28px;
+    margin-top: -56px;
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+    width: 169px;
+    height: 47px;
+    
+}
+
+
+
+h1.topic {
+    color: rgb(213, 61, 158);
+    padding: 66px 358px 75px 291px;
+    margin-top: 0px;
+    margin-left: 14px;
+}
+
+h2.shop {
+  color: rgb(227, 76, 222);
+  padding: -11px 425px 31px 267px;
+  margin-top: 24px;
+  margin-left: 44px;
+  width: 229px;
+}

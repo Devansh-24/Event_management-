@@ -1,0 +1,80 @@
+.container-fluid {
+    background-color: rgb(0, 0, 0);
+  }
+ .navbar-expand-lg { 
+     width: 100%; 
+     position: relative; /* Required for z-index to work */
+     z-index: 1;
+     background-color: black; 
+     top: 0; 
+    
+} 
+
+
+
+
+/* LOGO */
+img{
+    height:100px;
+}
+/* NAV BAR */
+.nav-link
+{
+    margin: 10px 15px ;
+}
+.nav-link:hover{
+    font-family: cursive;
+    border-radius: 7px;
+    background-color: rgb(238, 106, 165);
+    color:black;
+}
+/*login button*/
+.btn-outline-danger {
+    height: 43px;
+    /* padding: 0px 25px;
+    margin: 2px 88px; */
+    padding: 0px 25px;
+    margin: 14px -49px;
+    background-color: rgb(141, 139, 139);
+    color: white;
+    font-weight: 800;
+    border-color: cornsilk;
+
+}
+/* FULL BUTTON */
+.btn {
+        /* padding: 8px 24px; */
+        /* margin: inherit; */
+        /* margin: 8px 180px; */
+}
+.btn:hover
+{
+      background-color: rgb(238, 106, 165);
+       
+}
+/* button.btn.btn-outline-danger:hover
+{
+    background-color: rgb(238, 106, 165);
+     
+} */
+ button.btn.btn-outline-danger {
+  color: #0a0a0a;
+  font-size: 19px;
+  margin: 11px 0px 0px 530px;
+  border-color: #ebb0e9;
+  background-color: white;
+} */
+    /* INSIDE LOGIN AND ABOVE TEXT */
+.vend {
+    padding: 0px 126px;
+    margin: 0px 88px;
+}
+.read
+{
+    color: rgb(238, 210, 239);
+    font-size:20px;
+    display: flex;
+    
+}
+
+  

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
+
+
+
+    <!--Footer link-->
+    <link rel="stylesheet" href="./css/footer.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="./css/footer.css"> -->
+  </head>
+  <body>
+
+
+    <!-- OUR GALLARY -->
+    <div id="gallery">
+    <div class="gallaray">
+      <img class="image-11-icon" alt="" src="./public/15.png" />
+      <img class="image-12-icon" alt="" src="./public/image-12@2x.png" />
+      <div class="we-create-you">WE CREATE YOU CELEBRATE</div>
+          <img class="image-15-icon" alt="" src="./public/i1.png" />
+          <img class="image-14-icon" alt="" src="./public/i2.png"/>
+          <img class="image-16-icon" alt="" src="./public/i3.png" />
+          <img class="image-13-icon" alt="" src="./public/i4.png"/>
+
+          <!-- THE TIRLES OF THE IMAGES  -->
+      <b class="flamingo-baby-shower">FLAMINGO BABY SHOWER</b>
+      <b class="industry-farm-dinner">INDUSTRY FARM DINNER</b>
+      <b class="paper-airplane-proposal">PAPER AIRPLANE PROPOSAL</b>
+      <b class="urban-engagement-party">URBAN ENGAGEMENT PARTY</b>
+      <b class="celestial-rooftop-dinner">CELESTIAL ROOFTOP DINNER</b>
+      <b class="modern-quinceaera">MODERN QUINCEAÑERA</b>
+
+      <!-- IMAGES  -->
+      <img class="pexels-asad-photo-maldives-102-icon" alt="" src="./public/mim.png"/>
+      <img class="cate-1-icon" alt="" src="./public/cate-1@2x.png" />
+      <img class="makeup-artist-icon" alt="" src="./public/makeup-artist@2x.png"/>
+      <img class="image-3-icon" alt="" src="./public/image-3@2x.png" />
+
+      <!-- THEIR RESPECTIVE TITLES -->
+      <b class="urban-engagement-party1">URBAN ENGAGEMENT PARTY</b>
+      <b class="urban-engagement-party2">URBAN ENGAGEMENT PARTY</b>
+      <b class="urban-engagement-party3">URBAN ENGAGEMENT PARTY</b>
+      <b class="urban-engagement-party4">URBAN ENGAGEMENT PARTY</b>
+</div>
+</div>
+     <!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./public/logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" th:href="@{/}" href="landingpage.htm  l"><h4>Home</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  th:href="@{/venues}" href="venues.html"><h4>Venues</h4></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" th:href="@{/services}" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <h4>Services</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><h4>Catreen</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Decors</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Mehendi</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Anchors</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Choreographer</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4>Photographers</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Gallery}" href="Gallery.html"><h4>Gallary</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Reviews}" href="Reviews.html"><h4>Reviews</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  th:href="@{/packages}" href="packages.html"><h4>Packages</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " th:href="@{/Aboutus}" href="Aboutus.html"><h4>About </h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  th:href="@{/contact}"><h4>Contact </h4></a>
+              </li>
+              <div class="vend">
+               <a th:href="@{/vendorlogin}" href="VendorLogin.html"> <h1 class="read">Are you  Vendor ?</h1></a>
+                <a th:href="@{/Userlogin}" href="UserLogin.html"><button type="button" class="btn btn-outline-danger">Signup/Signin</button></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- </nav> end-->
+
+
+<footer class="bg-dark text-white pt-5 pb-4 footer " id="contact">
+      
+  <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABOUT OUR EVENTS</h5>
+          <p>Your One Stop Solution For Making Any Event Memorable Or A Success. Making Dreams come true</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text uppercase mb- font-weight-bold text-warning">Event Planning</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Event Management</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Meeting & Event Blog</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Why choose us?</a></p>
+          
+
+      </div>
+      <div class="col-md-3 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Terms Of Use</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
+         <p> <a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+          <p> <i class="fas fa-home mr-3"></i>Mangalevent@gmail.com</p>
+          <p> <i class="fas fa-envelope mr-3"></i>+91 1234567890</p>
+      </div>
+      <hr class="mb-4">
+      <div class="col-mb-7 col-lg-8">
+          <p>Copyright @2023 All rights reserved by:MangalEvents
+              <a href="#" style="text-decoration: none;"><strong class="text-warning">MangalEvents</strong></a>
+          </p>
+      </div>
+      
+  </div>
+</div>
+
+</footer>
+</body>
+</html>

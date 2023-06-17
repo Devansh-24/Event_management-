@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Login</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" th:href="@{/css/Login.css}" href="Login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <!-- The image half -->
+        <div class="col-md-5 d-none d-md-flex bg-image1 text-light text-center">
+            <div class="img-text">
+            <h1>Grow Your</h1>
+            <h1>Business with </h1>
+            <h1>EMS</h1>
+        </div>
+        </div>
+     <!-- The content half -->
+        <div class="col-md-7 bg-light">
+            <div class="login d-flex align-items-center py-5">
+
+                <!-- Demo content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                            <h3 class="display-8">Login In to your Account</h3>
+                            <p class="text-muted mb-4">Don't have a account? <a th:href="@{VendorRegistration}"> <b class="text-danger"> Free Sign up</b></a> </p>
+                            <form th:action="@{/vendorlogin12}" method="post"  >
+                            <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter Email">
+                                    <input class="input100" type="email" id="vendorEmail" name="vendorEmail" placeholder="Your Email">
+                
+                                </div>
+            
+                                <div class="wrap-input100 validate-input m-b-50 mb-2" data-validate="Enter password">
+                                    <input class="input100" type="password" id="vendorPass" name="vendorPass" placeholder="Your Password">
+                                  
+                                </div>
+                             
+
+                                <div class="custom-control custom-checkbox mb-2 mr-3 text-centerr">
+                                   
+                                    <a href="httas://www.google.com">Forget your Username/Password?</a> <br> <br>
+                                    <button type="submit"  class="button-size btn btn-default btn-danger text-uppercase " > Log in</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- End -->
+
+            </div>
+        </div>
+            <!-- End -->
+    </div>
+</div>
+
+    <!-- partial -->
+  
+</body>
+<script>
+
+    var vendorIdElem = document.getElementById("vendorId");
+    var vendorPassElem = document.getElementById("vendorPass");
+
+    function addVendor(params){
+        var vendor={
+            
+            vendorId :vendorIdElem.value,
+            vendorPass :vendorPassElem.value
+            
+        }
+
+        fetch("http://localhost:1972/vendor/login12",{
+            method: "post",
+            headers:{
+                'content-type' : 'application/json'
+            },
+            body:JSON.stringify(vendor)
+        }).then((Response)=>{
+            console.log(Response);
+            alert("vendor Login Successfully");
+            window.location.href = 'http://localhost:1972/';
+        }).catch((Response)=>{
+            console.log(Response);
+            alert('something went wrong');
+        })
+    }
+
+</script>
+</html>

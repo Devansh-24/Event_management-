@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/vendorHome.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/vendornavigation.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/public/logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" th:href="@{/home}" href="index.html"><h4>Home</h4></a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" th:href="@{/vendordetails}"><h4>Complete your Profile</h4></a> -->
+              </li>
+              <div class="vend">
+              
+                    <a th:href="@{/logout}"><button type="button"  class="btn btn-outline-danger">Log-out</button></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- <div class="jumbotron text-center">
+    jumbotron is like heading which is big enough
+    <h1 class="display-4">Welcome back, Admin</h1>
+    <p>Easily manage your data from this admin <mark>CMS</mark></p>
+</div> -->
+<div class="abc">
+<center>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="/image/venue.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Services</h5>
+      <p class="card-text">Let's add services to make user's dream event into real...</p>
+      <a href="#" th:href="@{/vendor/categories}"class="btn btn-primary">Add services</a>
+    </div>
+  </div>
+</center>
+
+</div>
+<div class="xyz">
+<center>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="/image/services.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Products</h5>
+      <p class="card-text">Lets add product for our services and make user's event a Delightful...</p>
+      <a href="#" th:href="@{/vendor/products}" class="btn btn-primary">Add products</a>
+    </div>
+  </div>
+</center>
+</div>
+  
+<footer class="bg-dark text-white pt-5 pb-4 footer " id="contact">
+  <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABOUT OUR EVENTS</h5>
+              <p>Your One Stop Solution For Making Any Event Memorable Or A Success. Making Dreams come true</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text uppercase mb- font-weight-bold text-warning">Event Planning</h5>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Event Management</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Meeting & Event Blog</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Why choose us?</a></p>
+   
+          </div>
+          <div class="col-md-3 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">Terms Of Use</a></p>
+              <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
+             <p> <a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+              <p> <i class="fas fa-home mr-3"></i>Mangalevent@gmail.com</p>
+              <p> <i class="fas fa-envelope mr-3"></i>+91 1234567890</p>
+          </div>
+          <hr class="mb-4">
+          <div class="col-mb-7 col-lg-8">
+              <p>Copyright @2023 All rights reserved by:MangalEvents
+                  <a href="#" style="text-decoration: none;"><strong class="text-warning">MangalEvents</strong></a>
+              </p>
+          </div>
+          
+      </div>
+  </div>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

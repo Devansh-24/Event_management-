@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Login</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" th:href="@{/css/Login.css}" href="UserLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <!-- <h1>Admin Login</h1>
+    <form th:action="@{/admin/login}" th:object="${admin}" method="post">
+        <div>
+            <label>Username:</label>
+            <input type="text" th:field="*{username}" required/>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" th:field="*{password}" required/>
+        </div>
+        <div>
+          <a href="@{admin/dashboard}"><button type="submit">Login</button></a>
+        </div>
+    </form>
+    <p th:text="${error}"></p>
+</body>
+</html>  -->
+<!-- partial:index.partial.html -->
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <!-- The image half -->
+        <div class="col-md-5 d-none d-md-flex bg-image text-light text-center">
+            <div class="img-text">
+            <h1>Easily Plan</h1>
+            <h1>All your Events </h1>
+            <h1>On EMS</h1>
+        </div>
+        </div>
+        <!-- The content half -->
+        <div class="col-md-7 bg-light">
+            <div class="login d-flex align-items-center py-5">
+         <!-- Demo content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                             <h3 class="display-8">Login In to your Account</h3>
+                             <p class="text-muted mb-4">Don't have a account? <a href="UserRegistration.html" target="_self"> <b class="text-danger"> Free Sign up</b></a> </p>
+        <form  th:action="@{/admin/login}" th:object="${admin}" method="post">
+             <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter username">
+                     <input class="input100" type="email" th:field="*{username}"id="custId" name="username" placeholder="Your Email" required>
+                     </div>
+                     <div class="wrap-input100 validate-input m-b-50 mb-2" data-validate="Enter password">
+                     <input class="input100" type="password" th:field="*{password}"  id="custPass" name="pass" placeholder="Your Password" required>
+                     </div>
+                     <div class="custom-control custom-checkbox mb-2 mr-3 text-centerr">
+                     <a href="httas://www.google.com">Forget your Username/Password?</a> <br> <br>
+                     <a href="@{admin/dashboard}"> <button type="submit"  class="button-size btn btn-default btn-danger text-uppercase " > Log in</button></a>
+                  </div>
+            </form>
+            <p th:text="${error}"></p>
+        </div>
+    </div>
+  </div>
+                        <!-- End -->
+    </div>
+   </div><!-- End -->
+  </div>
+  
+</div>
+                         <!-- partial -->
+  
+
+</body>
+</html>

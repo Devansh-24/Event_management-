@@ -1,0 +1,37 @@
+body {
+  /* element.style { */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --font-inter: Inter;
+  --font-jost: Jost;
+  --font-inria-serif: "Inria Serif";
+  --font-imperial-script: "Imperial Script";
+
+  /* font sizes */
+  --font-size-8xl: 27px;
+  --font-size-7xl: 26px;
+  --font-size-11xl: 30px;
+  --font-size-lg: 18px;
+  --font-size-6xl: 25px;
+  --font-size-57xl: 76px;
+
+  /* Colors */
+  --color-gray-100: #24252d;
+  --color-gray-200: #090908;
+  --color-thistle-100: #d7b5dc;
+  --color-lavenderblush: rgba(255, 242, 255, 0.83);
+  --color-brown: rgba(149, 37, 37, 0.05);
+  --color-black: #000;
+
+  /* border radiuses */
+  --br-3xl: 22px;
+  --br-29xl: 48px;
+  --br-xl: 20px;
+}

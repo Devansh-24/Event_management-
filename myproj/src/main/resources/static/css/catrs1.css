@@ -1,0 +1,126 @@
+nav {
+    background-color: #333;
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: calc(100% - 60px);
+    margin: 50px 0px 30px 35px;
+    padding: 52px;
+    display: inline-block;
+    vertical-align: top;
+  }
+    
+  .card1 {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: calc(80% - 45px);
+    margin: 76px 7px 50px 50px;
+    padding: 40px 0px 57px 59px;
+    display: inline-block;
+    vertical-align: top;
+}
+  
+  .profile-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+   margin: -44px -48px;
+  }
+
+  .card h2 {
+    /* font-size: xx-large; */
+    /* background-color: red; */
+    padding: 0px 0px 41px;
+}
+  /* user-data h2 {
+    margin: -35px 0px 50px 100px;
+    margin-top: 0px;
+} */
+  .image-slider img {
+    max-width: 100%;
+    height: 230px;
+    margin-right: 10px
+  }
+  
+.user-data p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .image-slider {
+    margin-top: 20px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .slider-image { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slider-image:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .slider-image:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .slider-image:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  /* Keyframe animation */
+  @keyframes slideshow {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 1;
+    }
+    58.33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Add animation to slider images */
+  .slider-image {
+    animation: slideshow 27s infinite;
+  }

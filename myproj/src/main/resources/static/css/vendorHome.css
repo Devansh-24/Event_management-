@@ -1,0 +1,22 @@
+.abc{
+    float: left;
+    width: 50%;
+    background-color: rgb(20, 20, 20);
+   height: 500px;
+}
+
+center{
+    margin-top: 100px;
+}
+
+
+.xyz{
+    float: right;
+    background-color: rgb(20, 20, 20);
+    width: 50%;
+    height: 500px;
+}
+
+.card-body{
+    background-color:rgb(243, 245, 243) ;
+}

@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" th:href="@{/css/VendorRegistration.css}" href="UserLogin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+    <title>Vendor's Sign Up</title>
+</head>
+
+
+
+<body>
+    <!-- src="/v-img-1.jpg" -->
+ 
+    <img  th:src="@{classpath:static/image/3.jpg}" alt="image" id="centre" style="width: 78%;height: 745px;margin-right: -916px;"> 
+    <div class="wrapper">
+         <div class="form-wrapper sign-in">
+             <form th:action="@{/vendorregister}" method="post">
+                <h2>Vendor's Sign Up</h2>
+                
+                
+                <div class="input-group">
+                    <input type="text" id="vendorName" pattern="\S(.*\S)?" title="Blank spaces not allowed" name="vendorName" required minlength="2" maxlength="20">
+                    <label for="">First Name and Last Name </label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="vendorEmail" name="vendorEmail" minlength="5" maxlength="20" required>
+                    <label for="">Email </label>
+                </div>
+                 <div class="input-group">
+                     <input type="password"  id="vendorPass" name="vendorPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" minlength="6" maxlength="20" required> 
+                     <label for="">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="vendorConfirmPass" name="vendorConfirmPass" minlength="6" maxlength="20" required> 
+                    <label for="">Confirm Password </label>
+               </div>
+               <div class="input-group">
+                <input type="number" id="vendorMob" name="vendorMob" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" title="Mobile No Must contain 10 digits" minlength="10"  required>
+                <label for="">Phone No </label>
+            </div>
+
+                <div class="remember">
+                    <label > <h5>By clicking'signup' I accept the Term of Use of EMS</h5></label>
+                </div>
+                <button type="submit">Sign up</button>
+                <!-- <button type="submit" onclick="ValidatePassword()">Sign Up</button> -->
+                <div class="signup-link">
+                    <p>Already have an account <a th:href="@{/VendorLogin}"
+                    class="signupbtn-ilink">sign In</a></p>
+                </div>
+            </form>
+        
+        </div>
+        
+     </div>
+</body>
+<script>
+    var vendorNameElem = document.getElementById("vendorName");
+    var vendorEmailElem = document.getElementById("vendorEmail");
+    var vendorPassElem = document.getElementById("vendorPass");
+    var vendorConfirmPassElem =document.getElementById("vendorConfirmPass");
+    var vendorMobElem = document.getElementById("vendorMob");
+
+  
+
+    function addVendor(params){
+        var vendor={
+            vendorName :vendorNameElem.value,
+            vendorEmail :vendorEmailElem.value,
+            vendorPass :vendorPassElem.value,
+            vendorConfirmPass :vendorConfirmPassElem.value,
+            vendorMob :vendorMobElem.value
+        }
+
+        fetch("http://localhost:1972/vendor/addVendor",{
+            method: "post",
+            headers:{
+                'content-type' : 'application/json'
+            },
+            body:JSON.stringify(vendor)
+        }).then((Response)=>{
+            console.log(Response);
+            alert("vendor Registered Successfully");
+            window.location.href = 'http://localhost:1972/VendorLogin.html';
+        }).catch((Response)=>{
+            console.log(Response);
+            alert('something went wrong');
+        })
+    }
+
+ function ValidatePassword()
+ {
+    if(vendorPassElem.value == vendorConfirmPassElem.value)
+    {
+        addVendor();
+        
+        
+    }
+    else{
+        alert('Password does not match ');
+    }
+ }
+</script>
+</html>

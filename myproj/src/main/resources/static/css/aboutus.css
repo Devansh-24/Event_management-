@@ -1,0 +1,178 @@
+body {
+  background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+
+ html body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    color: white;
+}
+
+
+  .vend {
+    padding: -2px 164px;
+    margin: -1px 33px;
+}
+  /* navigation */
+  
+.container-fluid {
+  background-color: black;
+}
+.navbar-expand-lg {
+  width: 100%;
+  position:fixed;
+  background-color: black;
+}
+/* LOGO */
+img{
+  height:100px;
+}
+
+.nav-link:hover{
+  font-family: cursive;
+  border-radius: 7px;
+  background-color: rgb(238, 106, 165);
+  color:black;
+}
+/*login button*/
+.btn-outline-danger {
+  height: 43px;
+  /* padding: 0px 25px;
+  margin: 2px 88px; */
+  padding: 0px 25px;
+  margin: 14px -49px;
+  background-color: rgb(141, 139, 139);
+  color: white;
+  font-weight: 800;
+  border-color: cornsilk;
+
+}
+/* FULL BUTTON */
+.btn {
+      padding: 8px 24px;
+      /* margin: inherit; */
+      margin: 8px 56px;
+}
+button.btn.btn-outline-danger:hover
+{
+    background-color: rgb(238, 106, 165);
+     
+}
+button.btn.btn-outline-danger {
+  color: #0a0a0a;
+  font-size: 20px;
+  margin: 4px;
+  border-color: #ebb0e9;
+  background-color: white;
+}
+  /* INSIDE LOGIN AND ABOVE TEXT */
+.vend {
+  padding: 0px 270px;
+  margin: 0px 88px;
+}
+/* .vend {
+  padding: 13px 270px;
+  margin: -3px 88px;
+} */
+.read
+{
+  color: rgb(205, 118, 210);
+  font-size:20px;
+  display: flex;
+  
+}
+
+
+  
+ 
+  /* *, *:before, *:after {
+    box-sizing: inherit;
+  } */
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+ img{
+    background-color: rgb(125, 92, 124);
+  }
+
+  element.style {
+    text-align: center;
+    color: #f5eded;
+}
+
+  html body {
+    background-color: rgba(0,0,0,1.00);
+  
+  }
+
+  .card {
+      width: 400px;
+  display: flex;
+    color: #bf1179;
+    background-color: rgb(247, 248, 248);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    font-size: 25px;
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(243, 236, 242);
+    background-color: #4e0330;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    height: 40px;
+  }
+  
+  .button:hover {
+    background-color: #bf1467;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

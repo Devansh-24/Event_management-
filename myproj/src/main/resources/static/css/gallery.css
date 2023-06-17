@@ -1,0 +1,327 @@
+body{
+    background-color: #131212;
+    color: rgb(15, 15, 15);
+}
+
+html body {
+  background-color: rgba(0,0,0,1.00);
+
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #0c0b0b;
+}
+
+/* navigation */
+
+.navbar-expand-lg {
+    width: 100%;
+    position:fixed;
+    background-color: black;
+}
+
+
+#contact{
+  margin-top: 2600px;
+}
+/* LOGO */
+img{
+    height:100px;
+}
+/* NAV BAR */
+.nav-link
+{
+    margin: 10px 15px ;
+}
+.nav-link:hover{
+    font-family: cursive;
+    border-radius: 7px;
+    background-color: rgb(238, 106, 165);
+    color:black;
+}
+/*login button*/
+.btn-outline-danger {
+    height: 43px;
+    /* padding: 0px 25px;
+    margin: 2px 88px; */
+    padding: 0px 25px;
+    margin: 14px -49px;
+    background-color: rgb(141, 139, 139);
+    color: white;
+    font-weight: 800;
+    border-color: cornsilk;
+
+}
+/* FULL BUTTON */
+.btn {
+        padding: 8px 24px;
+        /* margin: inherit; */
+        margin: 8px 56px;
+}
+.btn:hover
+{
+      background-color: rgb(238, 106, 165);      
+}
+button.btn.btn-outline-danger:hover
+{
+    background-color: rgb(238, 106, 165);
+     
+}
+button.btn.btn-outline-danger {
+  color: #0a0a0a;
+  font-size: 19px;
+  margin: -27px;
+  border-color: #ebb0e9;
+  background-color: white;
+}
+    /* INSIDE LOGIN AND ABOVE TEXT */
+.vend {
+    padding: 0px 180px;
+    margin: 0px 80px;
+}
+
+.read
+{
+    margin: 10px -16px;
+    color: rgb(238, 210, 239);
+    font-size:20px;
+    display: flex;
+    
+}
+
+  
+/* end navigation */
+.image-11-icon {
+    position: absolute;
+    top: 240px;
+    left: 31px;
+    border-radius: var(--br-6xl);
+    width: 350px;
+    height: 300px;
+  }
+  .we-create-you {
+    position: absolute;
+    top: 130px;
+    left: 296px;
+    font-size: 53px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    font-family: var(--font-work-sans);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 840px;
+    height: 93px;
+    opacity: 0.75;
+    mix-blend-mode: lighten;
+    color: pink;
+  }
+  .image-13-icon,
+  .image-14-icon,
+  .image-15-icon,
+  .image-16-icon {
+    position: absolute;
+      top: 226px;
+      left: 875px;
+      border-radius: var(--br-6xl);
+      width: 500px;
+      height: 410px;
+    
+  }
+  .image-13-icon,
+  .image-14-icon,
+  .image-16-icon {
+    top: 675px;
+    left: 42px;
+    width: 434px;
+    height: 629px;
+  }
+  .image-13-icon,
+  .image-16-icon {
+    top: 750px;
+    left: 926px;
+    width: 514px;
+    height: 425px;
+  }
+  .image-13-icon {
+    top: 708px;
+    left: 486px;
+    width: 464px;
+    height: 534px;
+  }
+  .flamingo-baby-shower {
+    top: 575px;
+    left: 61px;
+    font-size:25px;
+    text-align: center;
+    justify-content: center;
+    width: 320px;
+    height: 31.15px;
+  }
+
+
+  .flamingo-baby-shower,
+  .industry-farm-dinner,
+  .paper-airplane-proposal {
+    position: absolute;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    color: pink;
+  }
+
+
+  .industry-farm-dinner {
+    top: 1300px;
+    left: 77px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    width: 344px;
+    height: 31px;
+    color: pink;
+  }
+  .paper-airplane-proposal {
+    top: 650px;
+    left: 470px;
+    font-size:23px;
+    width: 350px;
+    height: 27px;
+    color: pink;
+  }
+  .urban-engagement-party {
+    top: 1225px;
+    left: 521px;
+    font-size: 25px;
+    width: 385px;
+    height: 76px;
+  }
+  .celestial-rooftop-dinner,
+  .modern-quinceaera,
+  .urban-engagement-party {
+    position: absolute;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    color: pink;
+  }
+  .celestial-rooftop-dinner {
+    top: 675px;
+    left: 959px;
+    font-size: 25px;
+    width: 363.42px;
+    height: 31.15px;
+    
+  }
+  .modern-quinceaera {
+    top: 1200px;
+    left: 993px;
+    font-size: 25px;
+    width: 423px;
+    height: 47px;
+    
+  }
+  .cate-1-icon,
+  .image-3-icon,
+  .makeup-artist-icon,
+  .pexels-asad-photo-maldives-102-icon {
+    position: absolute;
+    top: 1350px;
+    left: 40px;
+    border-radius: var(--br-6xl);
+    width: 853px;
+    height: 561px;
+    object-fit: cover;
+    color: pink;
+  }
+  .cate-1-icon,
+  .image-3-icon,
+  .makeup-artist-icon {
+    top: 1280px;
+    left: 892px;
+    width: 548px;
+    height: 410px;
+  }
+  .image-3-icon,
+  .makeup-artist-icon {
+    top: 1925px;
+    left: 50px;
+    width: 762px;
+    height: 703px;
+  }
+  .image-3-icon {
+    top: 1800px;
+    left: 890px;
+    width: 522px;
+    height: 840px;
+  }
+  .urban-engagement-party1,
+  .urban-engagement-party2,
+  .urban-engagement-party3,
+  .urban-engagement-party4 {
+    position: absolute;
+    top: 1900px;
+    left: 207px;
+    color: pink;
+    font-size: 25px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    width: 661px;
+    height: 74px;
+  }
+  .urban-engagement-party2,
+  .urban-engagement-party3,
+  .urban-engagement-party4 {
+    top: 1650px;
+    left: 929px;
+    height: 102px;
+  }
+  .urban-engagement-party3,
+  .urban-engagement-party4 {
+    top: 2650px;
+    left: 901px;
+    height: 74px;
+    color: pink;
+  }
+  .urban-engagement-party4 {
+    top: 2600px;
+    left: 207px;
+    color: pink;
+  }
+  #gallery img:hover {
+    animation: flip 0.8s ease-out forwards;
+  }
+  
+  #gallery img:nth-child(4n):hover,
+  #gallery img:nth-child(4n-1):hover {
+    animation-direction: reverse;
+  }
+  
+  @keyframes flip {
+    from {
+      transform: none;
+    }
+    to {
+      transform: rotateX(180deg);
+    }
+  }
+  .image-12-icon {
+    position: absolute;
+    top: 236px;
+    left: 442px;
+    border-radius: var(--br-6xl);
+    width: 350px;
+    height: 400px;
+    /* object-fit: cover; */
+  }
